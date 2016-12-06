@@ -1,0 +1,10 @@
+# Ignore secrets file
+secrets.yaml
+known_devices.yaml
+
+.uuid
+.HA_VERSION
+deps/
+*.log
+*.db
+
