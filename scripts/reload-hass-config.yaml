@@ -1,0 +1,5 @@
+reload_hass_config:
+  alias: Reload configuration
+  sequence:
+    - alias: Restart Home Assistant
+      service: homeassistant.reload_core_config

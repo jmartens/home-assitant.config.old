@@ -1,0 +1,33 @@
+family:
+  name: Family
+  entities:
+    - group.jonathan
+    - group.janneke
+
+jonathan:
+  name: Jonathan
+  entities:
+    - device_tracker.gsmjonathanfritzbox
+
+janneke:
+  name: Janneke
+  entities:
+    - device_tracker.android94a4e241c9141f90fritzbox
+
+family_info:
+  name: Family Info
+  entities:
+    - group.janneke
+    - group.jonathan
+    - sensor.jonathan_phone_battery
+    - sensor.janneke_phone_battery
+    - sensor.janneke_location_to_home
+    - sensor.jonathan_location_to_home
+
+hass_controls:
+  name: Home Assistent
+  entities:
+    - script.restart_home_assistant
+#      icon: mdi:play-pause
+    - script.reload_hass_config
+#      icon: mdi:refresh

@@ -1,0 +1,5 @@
+name: Work (V)
+latitude: !secret werk_venlo_lat
+longitude: !secret werk_venlo_long
+radius: 100
+icon: mdi:worker

@@ -1,0 +1,4 @@
+- name: dsmr
+  platform: dsmr
+  port: /dev/ttyAMA0
+  dsmr_version: 2.2

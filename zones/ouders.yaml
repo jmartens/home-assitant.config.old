@@ -1,0 +1,5 @@
+name: Ouders
+latitude: !secret ouders_lat
+longitude: !secret ouders_long
+radius: 20
+icon: mdi:home

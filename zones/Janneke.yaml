@@ -1,0 +1,5 @@
+name: Janneke
+latitude: !secret janneke_lat
+longitude: !secret janneke_long
+radius: 10
+icon: mdi:home

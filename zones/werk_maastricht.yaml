@@ -1,0 +1,5 @@
+name: werk_maastricht
+latitude: !secret werk_maastricht_lat
+longitude: !secret werk_maastricht_long
+radius: 100
+icon: mdi:worker

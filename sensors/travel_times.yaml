@@ -1,0 +1,50 @@
+- platform: google_travel_time
+#  name: Home to work (bike)
+  api_key: !secret GOOGLE_API
+  origin: zone.home
+  destination: zone.werk_maastricht
+  mode: bicycling
+  icon: mdi:bike
+
+- platform: google_travel_time
+  name: Work to home (bike)
+  api_key: !secret GOOGLE_API
+  origin: zone.werk_maastricht
+  destination: zone.home
+  mode: bicycling
+
+- platform: google_travel_time
+  name: Home to work (car)
+  api_key: !secret GOOGLE_API
+  origin: zone.home
+  destination: zone.werk_maastricht
+
+- platform: google_travel_time
+  name: Work to home (car)
+  api_key: !secret GOOGLE_API
+  origin: zone.werk_maastricht
+  destination: zone.home
+
+- platform: google_travel_time
+  name: To home (car)
+  api_key: !secret GOOGLE_API
+  origin: device_tracker.gsmjonathanfritzbox
+  destination: zone.home
+
+- platform: google_travel_time
+  name: Janneke Location To Home
+  api_key: !secret GOOGLE_API
+  origin: device_tracker.android94a4e241c9141f90fritzbox
+  destination: zone.home
+
+- platform: google_travel_time
+  name: Jonathan to Janneke
+  api_key: !secret GOOGLE_API
+  origin: zone.home
+  destination: zone.janneke
+
+- platform: google_travel_time
+  name: Janneke to Jonathan
+  api_key: !secret GOOGLE_API
+  origin: zone.janneke
+  destination: zone.home

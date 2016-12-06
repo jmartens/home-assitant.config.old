@@ -1,0 +1,151 @@
+#
+#  WeatherUnderground Customizations
+#
+  sensor.pws_stationid:
+    friendly_name: PWS Station ID
+    icon: mdi:fingerprint
+  sensor.pws_alerts:
+    friendly_name: Weather alerts
+    icon: mdi:message-alert
+  sensor.pws_location:
+    friendly_name: Location
+    icon: mdi:earth
+  sensor.pws_elevation:
+    friendly_name: Elev. above sea level
+    icon: mdi:upload
+  sensor.pws_observation_time:
+    friendly_name: Observation Time
+    icon: mdi:calendar-clock
+  sensor.pws_dewpoint_string:
+    friendly_name: Dewpoint String
+    icon: mdi:oil-temperature
+  sensor.pws_uv:
+    friendly_name: UV Level
+    icon: mdi:sunglasses
+  sensor.pws_precip_1hr_string:
+    friendly_name: Precip Last Hour String
+    icon: mdi:cup-water
+  sensor.pws_precip_today_string:
+    friendly_name: Precip Today String
+    icon: mdi:weather-rainy
+  sensor.pws_relative_humidity:
+    friendly_name: Relative Humidity
+    icon: mdi:water-percent
+  sensor.pws_heat_index_string:
+    friendly_name: Heat Index String
+    icon: mdi:thermometer-lines
+  sensor.pws_feelslike_string:
+    friendly_name: Feels Like String
+    icon: mdi:thermometer-lines
+  sensor.pws_wind_dir:
+    friendly_name: Wind Direction
+    icon: mdi:compass
+  sensor.pws_wind_string:
+    friendly_name: Wind String
+    icon: mdi:weather-windy
+  sensor.pws_wind_degrees:
+    friendly_name: Wind Bearing
+    icon: mdi:apple-safari
+#
+# Farenheit/Imperial
+#
+  sensor.pws_dewpoint_f:
+    friendly_name: Dew Point F
+    icon: mdi:oil-temperature
+  sensor.pws_feelslike_f:
+    friendly_name: Feels Like F
+    icon: mdi:account-alert
+  sensor.pws_temp_f:
+    friendly_name: Temperature F
+    icon: mdi:thermometer
+  sensor.pws_heat_index_f:
+    friendly_name: Heat Index F
+    icon: mdi:thermometer-lines
+  sensor.pws_precip_1hr_in:
+    friendly_name: Precip Last Hour in
+    icon: mdi:cup-water
+  sensor.pws_precip_today_in:
+    friendly_name: Precip Today in
+    icon: mdi:water
+  sensor.pws_pressure_in:
+    friendly_name: Barometric Pressure in
+    icon: mdi:nature
+  sensor.pws_visibility_mi:
+    friendly_name: Visibility mi
+    icon: mdi:weather-fog
+  sensor.pws_wind_mph:
+    friendly_name: Sustained Wind Speed MPH
+    icon: mdi:weather-windy
+  sensor.pws_wind_gust_mph:
+    friendly_name: Wind Gust Speed MPH
+    icon: mdi:speedometer
+#
+# Centigrade/Metric
+#
+  sensor.pws_dewpoint_c:
+    friendly_name: Dew Point C
+    icon: mdi:oil-temperature
+  sensor.pws_temp_c:
+    friendly_name: Temperature C
+    icon: mdi:thermometer
+  sensor.pws_feelslike_c:
+    friendly_name: Feels Like C
+    icon: mdi:account-alert
+  sensor.pws_heat_index_c:
+    friendly_name: Heat Index C
+    icon: mdi:thermometer-lines
+  sensor.pws_precip_1hr_metric:
+    friendly_name: Precip Last Hour mm
+    icon: mdi:cup-water
+  sensor.pws_precip_today_metric:
+    friendly_name: Precip Today mm
+    icon: mdi:water
+  sensor.pws_pressure_mb:
+    friendly_name: Barometric Pressure mb
+    icon: mdi:nature
+  sensor.pws_visibility_km:
+    friendly_name: Visibility km
+    icon: mdi:weather-fog
+  sensor.pws_wind_kph:
+    friendly_name: Sustained Wind Speed kph
+    icon: mdi:weather-windy
+  sensor.pws_wind_gust_kph:
+    friendly_name: Wind Gust Speed kph
+    icon: mdi:speedometer
+
+  group.jonathan:
+    entity_picture: /local/jonathan.jpg
+    friendly_name: Jonathan
+
+  group.janneke:
+    entity_pciture: /local/janneke.jpg
+    friendly_name: Janneke
+
+################
+# TAB ORDERING #
+################
+  group.home:
+    order: 1
+#  group.main_living:
+#    order: 2
+#  group.rooms:
+#    order: 3
+#  group.settings:
+#    order: 5
+
+# HOME
+  group.family_info:
+    order: 1
+  group.travel_times:
+    order: 2
+#  group.scripts:
+#    order: 3
+  group.weather:
+    order: 4
+#  group.climate:
+#    order: 5
+#  group.surveilance_events:
+#    order: 6
+#  group.surveilance:
+#    order: 7
+

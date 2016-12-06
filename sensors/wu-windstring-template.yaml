@@ -1,0 +1,6 @@
+- platform: template
+  sensors:
+    pws_wind_string:
+      value_template: "From the {{pws_wind_dir}} at {{pws_wind_kph}}, gusting to {{pws_wind_gust_kph}}"
+      friendly_name: 'Wind string'
+#      icon: mdi:weather-windy
