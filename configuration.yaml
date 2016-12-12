@@ -44,8 +44,8 @@ mqtt:
   broker: 127.0.0.1
   port: 1883
   client_id: home-assistant-1
-  username: !secret mqtt-user
-  password: !secret mqtt-password
+  username: !secret mqtt_user
+  password: !secret mqtt_password
 
 group: !include_dir_merge_named groups
 
