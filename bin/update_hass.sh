@@ -3,7 +3,7 @@
 #Stop HA
 service hass-daemon stop
 
-source /PlexMediaServer/hass/bin/activate
+source /srv/hass/hass_venv/bin/activate
 pip3 install -U homeassistant
 
 service hass-daemon start
