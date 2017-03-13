@@ -59,6 +59,9 @@ shell_command: !include_dir_named shell_command
 
 sensor: !include_dir_merge_list sensors
 
+recorder:
+  db_url: !secret mysql
+
 logger:
   default: warning
   logs:
