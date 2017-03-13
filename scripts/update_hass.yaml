@@ -1,6 +1,7 @@
-alias: "Update HA"
-sequence:
-  - condition: template
-    value_template: '{{ states.updater.updater.state == "0.37" }}'
-  - service: shell_command.update_hass
-  - service: homeassistant.restart
+update_home_assistant:
+    alias: "Update Home Assistant"
+    sequence:
+      - condition: template
+        value_template: '{{ states.updater.updater.state == "0.37" }}'
+      - service: shell_command.update_hass
+      - service: homeassistant.restart
