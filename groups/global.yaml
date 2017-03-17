@@ -31,3 +31,4 @@ hass_controls:
 #      icon: mdi:play-pause
     - script.reload_hass_config
 #      icon: mdi:refresh
+    - script.get_latest_config
