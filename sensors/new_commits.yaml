@@ -3,3 +3,9 @@
   scan_interval: 60
   unit_of_measurement: commits
   command: 'cd /home/hass/.homeassistant & git rev-list --count master..origin/master'
+  value_template:
+          {% if is_state('sensor.new_commits'> 0) %}
+            Config file is out-of-date by {{ states('sensor.new_commits') }} commits
+          {% else %}
+            Config file is up-to-date.
+          {% endif %}
