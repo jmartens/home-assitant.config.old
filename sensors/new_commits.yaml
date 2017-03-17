@@ -1,0 +1,5 @@
+- platform: command_line
+  name: "Check for new config"
+  scan_interval: 60
+  unit_of_measurement: commits
+  command: 'cd /home/hass/.homeassistant & git rev-list --count master..origin/master'
