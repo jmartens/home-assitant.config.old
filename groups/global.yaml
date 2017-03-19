@@ -35,7 +35,7 @@ hass_controls:
 
 updates:
   name: Updates
-  entities
+  entities:
     - sensor.new_commits
       icon: mdi:file-check
     - updater.updater
