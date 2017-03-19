@@ -7,7 +7,6 @@
     service: notify.notify
     data:
       message: 'New configuration is available'
-  action:
     service: notify.pushbullet
     data:
       message: 'New configuration is available'
