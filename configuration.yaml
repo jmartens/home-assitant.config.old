@@ -65,3 +65,8 @@ recorder:
 logger: !include logger.yaml
 
 automation: !include_dir_merge_list automation
+
+notify:
+  - platform: pushbullet
+    name: jonathan
+    api_key: !secret pushbullet
