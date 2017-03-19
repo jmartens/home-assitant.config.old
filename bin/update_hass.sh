@@ -1,9 +1,12 @@
 #!/bin/bash
+# Stop service
+sudo systemctl stop home-assistant.service
 
-#Stop HA
-service hass-daemon stop
-
+# Update Home Assistant 
+sudo -su hass
 source /srv/hass/hass_venv/bin/activate
-pip3 install -U homeassistant
+pip3 install --upgrade homeassistant
+deactivate
 
-service hass-daemon start
+# Start service
+sudo systemctl start home-assistant.service

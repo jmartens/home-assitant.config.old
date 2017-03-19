@@ -62,10 +62,6 @@ sensor: !include_dir_merge_list sensors
 recorder:
   db_url: !secret mysql
 
-logger:
-  default: warning
-  logs:
-#    homeassistant.components.sensor.google_travel_time: debug
-    homeassistant.components.recorder: debug
-#    homeassistant.components.sensor.fritz: debug
-#    homeassistant.components.sensor.nmap: debug
+logger: !include logger.yaml
+
+automation: !include_dir_merge_list automation
