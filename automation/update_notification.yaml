@@ -3,9 +3,9 @@
     platform: state
     entity_id: updater.updater
   action:
-    service: notify.notify
-    data:
-      message: 'Update for Home Assistant is available.'
-    service: notify.pushbullet
-    data:
-      message: 'There is a new Home Assistant release available.'
+    - service: notify.notify
+      data:
+        message: 'Update for Home Assistant is available.'
+    - service: notify.pushbullet
+      data:
+        message: 'There is a new Home Assistant release available.'
