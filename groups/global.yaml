@@ -40,3 +40,13 @@ updates:
       icon: mdi:file-check
     - updater.updater
       icon: mdi: new-box
+      
+utilities:
+  name: Utilities
+  entities:
+    - sensor.gas_consumption
+    - sensor.hourly_gas_consumption
+    - sensor.power_tariff
+    - sensor.power_consumption
+    - sensor.power_consumption_normal
+    - sensor.power_consumption_low
