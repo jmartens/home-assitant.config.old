@@ -36,7 +36,7 @@ hass_controls:
 updates:
   name: Updates
   entities:
-    - sensor.new_commits
+    - sensor.check_for_new_config
     - updater.updater
       
 utilities:
