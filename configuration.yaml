@@ -63,3 +63,5 @@ recorder:
   db_url: !secret mysql
 
 logger: !include logger.yaml
+
+automation: !include_dir_merge_list automation
