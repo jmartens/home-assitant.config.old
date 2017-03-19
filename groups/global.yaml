@@ -32,3 +32,11 @@ hass_controls:
     - script.reload_hass_config
 #      icon: mdi:refresh
     - script.get_latest_config
+
+updates:
+  name: Updates
+  entities
+    - sensor.new_commits
+      icon: mdi:file-check
+    - updater.updater
+      icon: mdi: new-box

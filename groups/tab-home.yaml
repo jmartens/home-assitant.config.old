@@ -3,6 +3,7 @@ default_view:
   icon: mdi:home
   entities:
     - group.weather
+    - group.updates
     - group.family_info
     - group.travel_times
     - group.utilities
