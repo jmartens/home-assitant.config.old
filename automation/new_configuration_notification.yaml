@@ -1,0 +1,13 @@
+- alias: 'New Home Assistant configuration'
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.check_for_new_config
+    above: 0
+  action:
+    service: notify.notify
+    data:
+      message: 'New configuration is available'
+  action:
+    service: notify.pushbullet
+    data:
+      message: 'New configuration is available'
