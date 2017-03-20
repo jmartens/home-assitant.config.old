@@ -6,6 +6,6 @@
     - service: notify.notify
       data:
         message: 'Update for Home Assistant is available.'
-    - service: notify.pushbullet
+    - service: notify.jonathan
       data:
         message: 'There is a new Home Assistant release available.'
