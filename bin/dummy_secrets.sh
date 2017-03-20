@@ -16,6 +16,6 @@ do
     esac
 done
 
-# Create certificate requriements
+# Create certificate requirements
 touch "ssl_key.pem"
 touch "ssl_cert.pem"
