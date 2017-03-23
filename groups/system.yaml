@@ -1,0 +1,20 @@
+system:
+  name: System
+  view: yes
+  icon: mdi:speedometer
+  entities:
+    - group.system
+    - group.updates
+    
+system:
+  name: System
+  entities:
+    - sensor.cpu_use
+    - sensor.disk_use_
+    - sensor.disk_use_varlog
+    - sensor.ram_use
+    - sensor.ram_free
+    - sensor.swap_use
+    - sensor.swap_free
+    - sensor.last_boot
+    - sensor.since_last_boot
