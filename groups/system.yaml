@@ -3,11 +3,11 @@ system:
   view: yes
   icon: mdi:speedometer
   entities:
-    - group.system
+    - group.vitals
     - group.updates
     
-system:
-  name: System
+vitals:
+  name: Vitals
   entities:
     - sensor.cpu_use
     - sensor.disk_use_
