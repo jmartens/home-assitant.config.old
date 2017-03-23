@@ -29,3 +29,4 @@ uptimes:
   name: Uptimes
   entities:
     - sensor.home_assistant_uptime
+    - sensor.system_uptime

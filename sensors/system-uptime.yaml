@@ -1,0 +1,4 @@
+- platform: command_line
+  name: "System uptime"
+  command: uptime -p | sed -e 's/up\s*//g'
+  scan_interval: 60
