@@ -33,12 +33,6 @@ hass_controls:
 #      icon: mdi:refresh
     - script.get_latest_config
 
-updates:
-  name: Updates
-  entities:
-    - sensor.check_for_new_config
-    - updater.updater
-      
 utilities:
   name: Utilities
   entities:

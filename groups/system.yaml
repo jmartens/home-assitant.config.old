@@ -18,3 +18,9 @@ system:
     - sensor.swap_free
     - sensor.last_boot
     - sensor.since_last_boot
+
+updates:
+  name: Updates
+  entities:
+    - sensor.check_for_new_config
+    - updater.updater
