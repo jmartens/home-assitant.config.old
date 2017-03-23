@@ -24,3 +24,8 @@ updates:
   entities:
     - sensor.check_for_new_config
     - updater.updater
+    
+uptimes:
+  name: Uptimes
+  entities:
+    - sensor.home_assistant_uptime
