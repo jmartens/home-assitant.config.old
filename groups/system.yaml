@@ -5,6 +5,7 @@ system:
   entities:
     - group.vitals
     - group.updates
+    - group.uptimes
     
 vitals:
   name: Vitals
