@@ -1,15 +1,7 @@
-- platform: nmap_tracker
-  hosts: 192.168.178.0/24
-  home_interval: 3
-
-  track_new_devices: yes
-  interval_seconds: 60
-  consider_home: 5
-
 # - platform: owntracks
 
 - platform: fritz
   host: fritz.box
-#  username: !secret fritzbox_user
-#  password: !secret fritzbox_pwd
-  
+  interval_seconds: 10
+  consider_home: 180
+  track_new_devices: yes
