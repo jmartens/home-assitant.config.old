@@ -8,6 +8,7 @@ jonathan:
   name: Jonathan
   entities:
     - device_tracker.gsmjonathanfritzbox
+    - device_tracker.jonathan_phone
 
 janneke:
   name: Janneke
