@@ -23,3 +23,7 @@ travel_times:
     - sensor.jonathan_home_travel
     - sensor.jonathan_work_travel
     - sensor.Home_to_work_bike
+    
+locations
+  entities:
+    - camera.jonathan
