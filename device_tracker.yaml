@@ -1,5 +1,7 @@
-# - platform: owntracks
-
+- platform: owntracks
+  max_gps_accuracy: 200
+  waypoints: True
+  
 - platform: fritz
   host: fritz.box
   interval_seconds: 10
