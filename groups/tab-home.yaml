@@ -6,6 +6,7 @@ default_view:
     - group.family_info
     - group.travel_times
     - group.utilities
+    - group.locations
 
 family_info:
   name: Family Info
