@@ -3,5 +3,5 @@ mediaplayers:
   view: yes
   icon: mdi:television
   entities:
-    - media_player.chromecast
-    - media_player.smarttv
+    - media_player.samsung_tv_remote
+    - media_player.tv
