@@ -3,5 +3,5 @@ mediaplayers:
   view: yes
   icon: mdi:tv
   entities:
-    - cast
-    - smarttv
+    - media_player.chromecast
+    - media_player.smarttv
