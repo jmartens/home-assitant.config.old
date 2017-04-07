@@ -1,3 +1,4 @@
 - platform: samsungtv
+  alias: SamsungTV
   host: !secret smarttvip
   mac: !secret smarttvmac
