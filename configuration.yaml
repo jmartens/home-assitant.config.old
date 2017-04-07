@@ -73,4 +73,4 @@ notify:
     
 camera: !include camera.yaml    
 
-media_player: !include_dir_named mediaplayers
+media_player: !include_dir_merge_list mediaplayers
