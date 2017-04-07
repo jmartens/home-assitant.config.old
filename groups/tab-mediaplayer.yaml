@@ -1,0 +1,7 @@
+mediaplayers:
+  name: Media
+  view: yes
+  icon: mdi:tv
+  entities:
+    - cast
+    - smarttv
