@@ -1,7 +1,7 @@
 mediaplayers:
   name: Media
   view: yes
-  icon: mdi:tv
+  icon: mdi:television
   entities:
     - media_player.chromecast
     - media_player.smarttv
