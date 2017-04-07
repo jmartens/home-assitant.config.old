@@ -72,3 +72,5 @@ notify:
     api_key: !secret pushbullet
     
 camera: !include camera.yaml    
+
+media_player: !include_dir_merge_list mediaplayers

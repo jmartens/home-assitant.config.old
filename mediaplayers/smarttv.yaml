@@ -1,0 +1,3 @@
+- platform: samsungtv
+  host: !secret smarttvip
+  mac: !secret smarttvmac
