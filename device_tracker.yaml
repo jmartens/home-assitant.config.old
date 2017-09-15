@@ -3,7 +3,7 @@
   waypoints: True
   
 - platform: fritz
-  host: fritz.box
+  host: !secret router_ip
   interval_seconds: 10
   consider_home: 180
   track_new_devices: yes
