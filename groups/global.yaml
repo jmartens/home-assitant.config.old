@@ -9,7 +9,8 @@ jonathan:
   entities:
     - device_tracker.gsmjonathanfritzbox
     - device_tracker.jonathan_phone
-
+    - device_tracker.homeassistant_jonathan
+    
 janneke:
   name: Janneke
   entities:
