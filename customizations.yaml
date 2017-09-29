@@ -113,6 +113,17 @@
     friendly_name: Wind Gust Speed kph
     icon: mdi:speedometer
 
+  sensor.to_work_car:
+    icon: mdi:car
+  sensor.to_work_bike:
+    icon: mdi:bike
+  sensor.to_home_car:
+    icon: mdi:car
+  sensor.to_home_bike:
+    icon: mdi:bike
+  sensor.to_venlo_car:
+    icon: mdi:car
+
   group.jonathan:
     entity_picture: /local/jonathan.jpg
     friendly_name: Jonathan
