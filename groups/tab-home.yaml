@@ -21,9 +21,11 @@ family_info:
 travel_times:
   name: Travel Times
   entities:
-    - sensor.jonathan_home_travel
-    - sensor.jonathan_work_travel
-    - sensor.Home_to_work_bike
+    - sensor.to_home_bike
+    - sensor.to_home_car
+    - sensor.to_work_bike
+    - sensor.to_work_car
+    - sensor.to_venlo_car
     
 locations:
   entities:
