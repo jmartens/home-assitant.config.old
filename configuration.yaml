@@ -41,7 +41,14 @@ logbook:
 sun:
 
 mqtt:
-
+  embedded:
+    auth:
+      plugins: 
+        - auth.anonymous
+        - auth.file
+      allow-anonymous: false
+      password-file: !secret mqtt_passwords
+      
 group: !include_dir_merge_named groups
 
 device_tracker: !include device_tracker.yaml
