@@ -1,0 +1,31 @@
+- id: '1585594656641'
+  alias: Dustcollector ON
+  description: Enables dustcollector when other devices are switched on
+  trigger:
+  - device_id: f9cb1f71e4994618bcb9424ec7ad5ac0
+    domain: switch
+    entity_id: switch.shaper
+    platform: device
+    type: turned_on
+  condition: []
+  action:
+  - device_id: 39a5fad7f4754abaa535768e70669b9a
+    domain: switch
+    entity_id: switch.dustcollector
+    type: turn_on
+- id: '1585594752133'
+  alias: Dustcollector OFF
+  description: ''
+  trigger:
+  - device_id: f9cb1f71e4994618bcb9424ec7ad5ac0
+    domain: switch
+    entity_id: switch.shaper
+    platform: device
+    type: turned_off
+  condition: []
+  action:
+  - delay: 00:00:05
+  - device_id: 39a5fad7f4754abaa535768e70669b9a
+    domain: switch
+    entity_id: switch.dustcollector
+    type: turn_off
