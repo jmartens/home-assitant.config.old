@@ -3,9 +3,8 @@ python:
   - "3.7"
 before_install:
   - sudo apt-get install -y libudev-dev
-  - sudo apt-get install -y grep
-  - grep -irh secret *.yaml
 install:
+  - grep -irh secret *.yaml
   - pip3 install homeassistant
 script:
   - hass -c . --script check_config
