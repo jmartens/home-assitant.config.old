@@ -1,0 +1,10 @@
+- platform: wifi_info
+  ip_address:
+    name: IP address
+    icon: mdi:ip-network-outline
+  ssid:
+    name: SSID
+    icon: mdi:access-point-network
+  bssid:
+    name: MAC address
+    icon: mdi:expansion-card-variant

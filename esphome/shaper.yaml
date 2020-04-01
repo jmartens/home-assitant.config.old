@@ -1,0 +1,39 @@
+esphome:
+  name: shaper
+  platform: ESP8266
+  board: esp01_1m
+
+wifi:
+  ssid: !secret ssid_wifi_snetram_nl
+  password: !secret pwd_wifi_snetram_nl
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Shaper Fallback Hotspot"
+    password: !secret pwd_wifi_snetram_nl
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: !secret pwd_wifi_snetram_nl
+
+ota:
+  password: !secret pwd_wifi_snetram_nl
+
+switch:
+  - platform: gpio
+    name: "Shaper"
+    pin: GPIO1
+    icon: mdi:weather-hurricane
+  - platform: restart
+    name: "Restart ESP"
+  
+text_sensor: 
+  !include includes/wifi-info.yaml
+
+sensor:
+  !include includes/wifi-signal-strength.yaml

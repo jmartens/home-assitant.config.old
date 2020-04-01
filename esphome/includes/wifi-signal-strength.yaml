@@ -1,0 +1,4 @@
+- platform: wifi_signal
+  name: "WiFi signal strength"
+  update_interval: 60s
+  icon: mdi:wifi-strength-outline

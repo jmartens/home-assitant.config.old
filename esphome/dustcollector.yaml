@@ -1,0 +1,39 @@
+esphome:
+  name: dustcollector
+  platform: ESP8266
+  board: esp01_1m
+
+wifi:
+  ssid: !secret ssid_wifi_snetram_nl
+  password: !secret pwd_wifi_snetram_nl
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Dustcollector Fallback Hotspot"
+    password: "wachtwoord"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: !secret pwd_wifi_snetram_nl
+
+ota:
+  password: !secret pwd_wifi_snetram_nl
+
+switch:
+  - platform: gpio
+    name: "Dustcollector"
+    pin: GPIO1
+    icon: mdi:weather-tornado
+  - platform: restart
+    name: "Restart"
+    
+text_sensor: 
+  !include includes/wifi-info.yaml
+  
+sensor:
+  !include includes/wifi-signal-strength.yaml
