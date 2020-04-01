@@ -3,7 +3,7 @@ python:
   - "3.7"
 before_install:
   - sudo apt-get install -y libudev-dev
-  - grep --ignore-case --recurse --no-filename "\!secret" *.yaml
+  - grep --ignore-case --recursive --no-filename "\!secret" *.yaml
 install:
   - pip3 install homeassistant
 script:
