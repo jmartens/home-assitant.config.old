@@ -3,8 +3,7 @@ python:
   - "3.7"
 before_install:
   - sudo apt-get install -y libudev-dev
-  - ls -la
-  - grep ph
+  - grep -h
 install:
   - pip3 install homeassistant
 script:
