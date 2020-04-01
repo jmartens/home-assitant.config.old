@@ -1,0 +1,10 @@
+language: python
+python:
+  - "3.7"
+before_install:
+  - for f in `grep -irh secret *.yaml | sed 's/^.*secret\s//g' | sort -u`; do echo "$f: \"*** GENERATED DUMMY SECRET ***\"" >> secrets.yaml; done
+  - sudo apt-get install -y libudev-dev
+install:
+  - pip3 install homeassistant
+script:
+  - hass -c . --script check_config
